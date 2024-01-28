@@ -1,38 +1,571 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  font-family: 'Inter', sans-serif;
+}
+
+.body {
+  margin-top: 60px;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+}
+
+.header ul {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.link-1 {
+  font-size: 25px;
+  color: #ff0;
+  text-decoration: none;
+  line-height: 60px;
+  font-family: 'Quantico', sans-serif;
+  padding-left: 150px;
+  font-weight: 400;
+}
+
+.link-2 {
+  font-size: 20px;
+  color: #ececec;
+  line-height: 60px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.5s 0s ease;
+}
+
+.link-3 {
+  font-size: 20px;
+  color: #ececec;
+  line-height: 60px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.5s 0s ease;
+}
+
+.link-4 {
+  font-size: 20px;
+  color: #ececec;
+  line-height: 60px;
+  text-decoration: none;
+  padding-right: 100px;
+  font-weight: 400;
+  transition: all 0.5s 0s ease;
+}
+
+.link-2:hover {
+  color: #fff;
+}
+
+.link-3:hover {
+  color: #fff;
+}
+
+.link-4:hover {
+  color: #fff;
+}
+
+.top {
+  width: 100%;
+  height: 580px;
+  background-image: url(../public/pexels-miriam-espacio-365633.jpg);
+  background-size: cover;
+}
+
+.top h1 {
+  font-weight: 900;
+  color: (256, 256, 256, 0.5);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 188px;
+}
+
+.span-1 {
+  color: #fff;
+  background: -webkit-linear-gradient(-90deg, #fff, rgb(255, 255, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about {
+  background-color: #000;
+  padding-bottom: 75px;
+}
+
+.about h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: #ff0;
+  padding-top: 150px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.boxes {
+  display: flex;
+  gap: 140px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.box h2 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #ff0;
+  text-align: center;
+  line-height: 62px;
+}
+
+.box-border {
+  width: 340px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(255, 255, 0, 0.7), rgba(255, 255, 0, 0.35), transparent);
+  border-radius: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: #000;
+  border-radius: 9px;
+  height: 246px
+}
+
+.box p {
+  color: rgb(236, 236, 236);
+  padding: 24px;
+  line-height: 19.36px;
+}
+
+
+.page0 {
+  background-color: #000;
+  padding-bottom: 60px;
+  margin-top:-80px;
+  padding-top: 80px;
+}
+
+.page0 h1 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 90px;
+  color: #fff;
+  background: -webkit-linear-gradient(-90deg, #fff, rgba(0, 224, 255, 0.25));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page0BoxBorder {
+  width: 340px;
+  height: 250px;
+  background: linear-gradient(135deg, rgba(0, 224, 255, 0.7), rgba(0, 224, 255, 0.35), transparent);
+  border-radius: 10px;
+  padding: 2px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page0Box {
+  background-color: #000;
+  border-radius: 9px;
+  height: 246px;
+  padding-left: 55px;
+  padding-right: 55px;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page0Box p {
+  color: #fff;
+  line-height: 19.36px;
+}
+
+.page0Box h1 {
+  font-weight: 900;
+  font-size: 20px;
+  background-color: rgba(0, 224, 255, 1);
+  line-height: 62px;
+  text-align: center;
+}
+
+.page0Boxes {
+  width: fit-content;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 140px;
+  margin: 60px auto 0;
 }
 
-.App-link {
-  color: #61dafb;
+.page0>.page0BoxBorder {
+  margin: 106px auto 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.eFunction h1 {
+  font-size: 30px;
+  font-weight: 900;
+  background-color: rgba(0, 224, 255, 1);
+  text-align: left;
+}
+
+.quest h1 {
+  font-size: 30px;
+  font-weight: 900;
+  background-color: rgba(0, 224, 255, 1);
+  text-align: left;
+}
+
+.eFunction {
+  max-width: 820px;
+  margin: 168px auto 0;
+}
+
+.quest {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.button1 {
+  width: 208px;
+  height: 34px;
+  border: 1px solid rgba(0, 224, 255, 1);
+  color: rgba(0, 224, 255, 1);
+  background-color: #000;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 40px auto 0;
+  display: block;
+  line-height: 34px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.button2 {
+  width: 208px;
+  height: 34px;
+  border: 1px solid rgba(0, 224, 255, 1);
+  color: rgba(0, 224, 255, 1);
+  background-color: #000;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 40px auto 0;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.span-3 {
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+nav {
+  display: none;
+}
+
+.toggle_btn {
+  display: none;
+}
+
+.span-500 {
+  display: none;
+}
+
+
+
+
+.page4{
+  background-color: #000;
+  padding-bottom: 49px;
+}
+
+.page4>h1{
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 90px;
+  padding-top:13px ;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(-90deg, #fff, rgba(255, 255, 0, 1.0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nthGen h1{
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 115px;
+  padding-top:61px ;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(-90deg, #fff, rgba(255, 255, 0, 1.0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blackBox{
+  width:600px;
+  height:300px;
+  background-color: rgba(50, 50, 50, 1);
+  border-radius: 10px;
+  margin: 0 auto;
+  color:#fff;
+  overflow-y: scroll;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.blackBox li{
+  list-style: none;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.searchGen h1{
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 90px;
+  padding-top:44px ;
+  padding-bottom: 21px;
+  text-align: center;
+  color: #fff;
+  background: -webkit-linear-gradient(-90deg, #fff, rgba(255, 255, 0, 1.0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.genInput input{
+  width:205px;
+  height:30px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 4px;
+  font-weight: 900;
+}
+
+.genInput{
+  display: flex;
+  gap:11px;
+  margin: 0 auto 29px;
+  width: fit-content;
+}
+
+.genInput button{
+  height:30px;
+  width:80px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: rgba(255, 255, 0, 1) solid 1px;
+  color: rgba(255, 255, 0, 1);
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  background-color: #000;
+  font-weight: 900;
+}
+
+
+
+
+@media(max-width:1024px) {
+  .header ul {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .link-1 {
+    padding-left: 75px;
+  }
+
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 70px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 4px;
+    transition: all .5s;
+  }
+
+  .toggle_btn span:nth-child(1) {
+    top: 14px;
+    left: 10px;
+  }
+
+  .toggle_btn span:nth-child(2) {
+    top: 24px;
+    left: 10px;
+  }
+
+  .toggle_btn span:nth-child(3) {
+    bottom: 14px;
+    left: 10px;
+  }
+
+  .toggle_btn[aria-expanded="true"] span {
+    background-color: #333;
+  }
+
+  .toggle_btn[aria-expanded="true"] span:nth-child(1) {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+  }
+
+  .toggle_btn[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle_btn[aria-expanded="true"] span:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+  }
+
+  .mask {
+    display: none;
+    transition: all .5s;
+  }
+
+  .mask[aria-expanded="true"] {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  nav {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all .5s;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  nav[aria-expanded="true"] {
+    left: 0;
+    opacity: 1;
+  }
+
+  nav .inner {
+    padding: 25px;
+  }
+
+  nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav .inner ul li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+
+  nav .inner ul li a {
+    display: block;
+    color: #333;
+    font-size: 20px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .page0Boxes {
+    flex-direction: column;
+    gap: 106px;
+  }
+}
+
+@media(max-width:768px) {
+  .top h1 {
+    padding-top: 150px;
+  }
+}
+
+@media(max-width:500px) {
+  .top h1 {
+    font-size: 48px;
+  }
+
+  .link-1 {
+    padding-left: 25px;
+  }
+
+  .toggle_btn {
+    right: 10px;
+  }
+
+  nav {
+    width: 270px;
+  }
+
+  .span-500 {
+    display: inline;
+  }
+
+  .box-border {
+    width: 310px;
+  }
+
+  .page0BoxBorder {
+    width: 310px;
+  }
+
+  .page0Box {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page0>h1 {
+    line-height: 1.5;
+  }
+}
+
+@media(max-width:350px) {
+  .top h1 {
+    padding-top: 100px;
   }
 }
